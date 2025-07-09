@@ -1,0 +1,104 @@
+<style>
+    * {
+        font-size: 32px;
+    }
+    
+    code {
+        background-color: #e3e3e3;
+        margin: 0px auto;
+    }
+    
+    li {
+        padding-top:20px;
+    }
+
+    pre {
+        white-space: pre-wrap;       /* Since CSS 2.1 */
+        white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+        white-space: -pre-wrap;      /* Opera 4-6 */
+        white-space: -o-pre-wrap;    /* Opera 7 */
+        word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    }
+
+    .container {
+        display:flex;
+        height:100%;
+    }
+
+    .child {
+        width:50%;
+        height:stretch;
+        overflow-y:auto;
+        padding:5px;
+    }
+</style>
+
+<div class="container">
+    <div class="child">
+    <b>HTML Rules:</b>
+    <ul>
+    <li>structure: HTML <i><u>elements</u></i> are denoted by '<' and '>' brackets, eg:<br />
+        <code>&lt;b&gt;the 'b' element makes text bold&lt;/b&gt;</code></li>
+    <li>it is best practice to close all elements.
+    <ul><li>opening an element looks like this: <code>&lt;element&gt;</code></li>
+    <li>closing an element looks like this: <code>&lt;/element&gt;</code>.</li>
+    <li>some elements, like <code>&lt;br&gt;</code>, do not close. in this case, it is best practice to write <code>&lt;br /&gt;</code></li></ul></li>
+    <li>close elements in the same order you opened them, eg:<br>
+    correct: <code><font color="red">&lt;body&gt;</font><font color="green">&lt;b&gt;</font><font color="blue">&lt;u&gt;</font>hello world<font color="blue">&lt;/u&gt;</font><font color="green">&lt;/b&gt;</font><font color="red">&lt;/body&gt;</font></code><br>
+    incorrect: <code><font color="red">&lt;body&gt;</font><font color="green">&lt;b&gt;</font><font color="blue">&lt;u&gt;</font>hello world<font color="green">&lt;/b&gt;</font><font color="blue">&lt;/u&gt;</font><font color="red">&lt;/body&gt;</font></code>
+    <li>elements should be lowercase, ie. <code>&lt;body&gt; instead of &lt;BODY&gt;</code></li>
+    <li>elements can have <i><u>attributes</u></i>. attribute <i><u>values</u></i> are attached to attributes by the equal sign ('=') and must be in quotation marks, eg:<br><code>&lt;img <font color="magenta">src</font>="value" <font color="magenta">width</font>="value"&gt;</code><br>
+    <i>note: you should not have spaces between the attribute, equal sign, and value</i></li>
+    <li>more detailed standards and examples can be found <a href="https://www.w3schools.com/htmL/html5_syntax.asp">here</a>.</li>
+    <li>information on escape characters (ie. how to display 'special' characters in html) can be found <a href="https://www.w3schools.com/html/html_entities.asp">here</a></li>
+    </ul>
+</div>
+<div class="child">
+<code><pre>&lt;b&gt;HTML Rules:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;
+structure: HTML &lt;i&gt;&lt;u&gt;elements&lt;/u&gt;&lt;/i&gt; are denoted by '&lt;' and '&gt;' brackets, eg:&lt;br /&gt;
+&lt;code&gt;
+&amp;lt;b&amp;gt;the 'b' element makes text bold&amp;lt;/b&amp;gt;
+&lt;/code&gt;
+&lt;/li&gt;&lt;li&gt;
+it is best practice to close all elements.
+&lt;ul&gt;&lt;li&gt;
+opening an element looks like this: &lt;code&gt;&amp;lt;element&amp;gt;&lt;/code&gt;
+&lt;/li&gt;&lt;li&gt;
+closing an element looks like this: &lt;code&gt;&amp;lt;/element&amp;gt;&lt;/code&gt;
+&lt;/li&gt;&lt;/ul&gt;
+&lt;/li&gt;&lt;li&gt;
+close elements in the same order you opened them, eg:&lt;br&gt;
+correct: &lt;code&gt;&lt;font color="red"&gt;&amp;lt;body&amp;gt;&lt;/font&gt;&lt;font color="green"&gt;&amp;lt;b&amp;gt;&lt;/font&gt;&lt;font color="blue"&gt;&amp;lt;u&amp;gt;&lt;/font&gt;hello world&lt;font color="blue"&gt;&amp;lt;/u&amp;gt;&lt;/font&gt;&lt;font color="green"&gt;&amp;lt;/b&amp;gt;&lt;/font&gt;&lt;font color="red"&gt;&amp;lt;/body&amp;gt;&lt;/font&gt;&lt;/code&gt;&lt;br&gt;
+incorrect: &lt;code&gt;&lt;font color="red"&gt;&amp;lt;body&amp;gt;&lt;/font&gt;&lt;font color="green"&gt;&amp;lt;b&amp;gt;&lt;/font&gt;&lt;font color="blue"&gt;&amp;lt;u&amp;gt;&lt;/font&gt;hello world&lt;font color="green"&gt;&amp;lt;/b&amp;gt;&lt;/font&gt;&lt;font color="blue"&gt;&amp;lt;/u&amp;gt;&lt;/font&gt;&lt;font color="red"&gt;&amp;lt;/body&amp;gt;&lt;/font&gt;&lt;/code&gt;
+&lt;li&gt;elements should be lowercase, ie. &lt;code&gt;&amp;lt;body&amp;gt; instead of &amp;lt;BODY&amp;gt;&lt;/code&gt;
+&lt;/li&gt;&lt;li&gt;
+elements can have &lt;i&gt;&lt;u&gt;attributes&lt;/u&gt;&lt;/i&gt;. attribute &lt;i&gt;&lt;u&gt;values&lt;/u&gt;&lt;/i&gt; are attached to attributes by the equal sign ('=') and must be in quotation marks, eg:&lt;br&gt;
+&lt;code&gt;
+&amp;lt;img &lt;font color="magenta"&gt;src&lt;/font&gt;="value" &lt;font color="magenta"&gt;width&lt;/font&gt;="value"&amp;gt;
+&lt;/code&gt;
+&lt;br&gt;
+&lt;i&gt;note: you should not have spaces between the attribute, equal sign, and value&lt;/i&gt;
+&lt;/li&gt;&lt;li&gt;
+more detailed standards and examples can be found &lt;a href="https://www.w3schools.com/htmL/html5_syntax.asp"&gt;here&lt;/a&gt;.
+&lt;/li&gt;&lt;li&gt;
+information on escape characters (ie. how to display 'special' characters in html) can be found &lt;a href="https://www.w3schools.com/html/html_entities.asp"&gt;here&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;style&gt;
+* {
+    font-size: 32px;
+}
+
+code {
+    background-color: #e3e3e3;
+    margin: 0px auto;
+}
+
+li {
+    padding-top:20px;
+}
+&lt;/style&gt;
+</pre></code></div>
