@@ -1,0 +1,291 @@
+<style>
+    * {
+        font-size: 32px;
+    }
+    
+    code {
+        background-color: #e3e3e3;
+        margin: 0px auto;
+    }
+    
+    li {
+        padding-top:20px;
+    }
+
+    pre {
+        white-space: pre-wrap;       /* Since CSS 2.1 */
+        white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+        white-space: -pre-wrap;      /* Opera 4-6 */
+        white-space: -o-pre-wrap;    /* Opera 7 */
+        word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    }
+
+    .container {
+        display:flex;
+        height:100%;
+    }
+
+    .child {
+        width:50%;
+        height:stretch;
+        overflow-y:auto;
+        padding:5px;
+        border-left: 5px solid #e3e3e3;
+    }
+
+    h1 {
+    color: red;
+    font-size: 32px;
+    font-weight: bold;
+    }
+
+    #example2 {
+        color: green;
+        text-decoration:underline;
+    }
+
+    .example3 {
+        color: magenta;
+        border-bottom: 3px solid orange;
+        width: 50%;
+    }
+
+    header {
+        font-size: 34px;
+        font-weight:bold;
+        background-color: gold;
+        border-top: 10px solid #fff;
+    }
+</style>
+
+<div class="container">
+    <div class="child">
+        <b>CSS Rules:</b>
+        <ul>
+        <li>
+        CSS is used to style HTML. A .css file is also called a 'stylesheet'.
+        </li><li>
+        as with HTML, CSS is written in lowercase.
+        </li><li>
+        structure: CSS is made up of a <font color="orange">selector</font> and <font color="violet">declarations</font>. declarations are separated by a semicolon <b>;</b> and are all contained within curly brackets <b>{ }</b> :<br>
+        <code><pre>
+        <font color="orange">header</font> {<font color="violet">
+            font-size: 34px;
+            font-weight:bold;
+            background-color: gold;
+        </font>}
+        </pre></code>
+        </li><li>
+        within each <font color="violet">declaration</font> is a <font color="red">property</font> and <font color="blue">value</font>:<br>
+        <code><pre>
+        header {
+            <font color="red">font-size</font>: <font color="blue">34px</font>;
+            <font color="red">font-weight</font>: <font color="blue">bold</font>;
+            <font color="red">background-color</font>: <font color="blue">gold</font>;
+        }
+        </pre></code>
+        </li><li>
+        <code>&lt;header&gt;this is a header!&lt;/header&gt;</code> creates...
+        <header>this is a header!</header>
+        </li><li>
+        there are different types of <font color="orange">selector</font>:
+        <ul><li>
+        <b>elements:</b> existing HTML elements, for example: &lt;p&gt;, &lt;b&gt;, &lt;h1&gt;...
+        <ul>
+        <code><pre>
+        h1 {
+            color: red;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        </pre></code>
+        will cause all text in the &lt;h1&gt;hello!&lt;/h1&gt; element to show as <h1>hello!</h1>
+        </ul>
+        </li><li>
+        <b>id:</b> used for a user-defined element that is unique within a page.
+        <ul>
+        <code><pre>
+        #example2 {
+            color: green;
+            text-decoration:underline;
+        }
+        </pre></code>
+        will cause the &lt;p id="example2"&gt;hello!&lt;/p&gt; element to show as
+        <p id="example2">hello!</p>
+        </ul>
+        </li><li>
+        <b>class:</b> used for a user-defined element that may be used multiple times across a site or page.
+        <ul>
+        <code><pre>
+        .example3 {
+            color: magenta;
+            border-bottom: 3px solid orange;
+            width: 50%;
+        }
+        </pre></code>
+        will cause the &lt;p class="example3"&gt;hello!&lt;/p&gt; element to show as
+        <p class="example3">hello!</p>
+        </ul>
+        </li></ul>
+        </li><li>
+        more information on CSS selectors can be found <a href="https://www.w3schools.com/Css/css_selectors.asp">here</a>
+        </li><li>
+        CSS can be added to HTML in three ways:
+        <ul><li>
+        <b>internal:</b> CSS is written directly in the HTML file using the <code>&lt;style&gt;&lt;/style&gt;</code> element.<br>
+        <i>for hub sites, this is the best practice, particularly if CSS is written into the HTML header; it keeps all of the CSS in one place for easy editing.</i>
+        </li><li>
+        <b>external:</b> a stylesheet is imported into the HTML using<br>
+        <code>&lt;link rel="stylesheet" href="mystyle.css"&gt;</code><br>
+        <i>for a self-hosted website, eg. GitHub Pages, this is best practice.</i>
+        </li><li>
+        <b>inline:</b> CSS is referenced inline using a style attribute:<br>
+        <code>&lt;div style="property:value;"&gt;&lt;/div&gt;</code><br>
+        <i>this should be used sparingly, as it can be difficult to come back to for later edits and updates.</i>
+        </li></ul>
+        </li></ul>
+<div style="margin:0px auto;padding:20px;border:3px solid gold;width:90%"><span style="text-align:center;"><b>Activity!</b> Style this HTML using CSS (<a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello">live code editor</a>):</span><br>
+useful links: <a href="https://www.w3schools.com/Css/css_text.asp">text styling properties</a>, <a href="https://www.w3schools.com/Css/css_background.asp">css backgrounds</a>, <a href="https://www.w3schools.com/Css/css_border.asp">css borders</a><br>
+<code style="background-color:#e3e3e3"><pre>
+&lt;style&gt;
+.paragraph {
+    font-size: 16px;
+}
+&lt;/style&gt;
+
+&lt;p class="paragraph"&gt;
+If it hadn't been for Cotton-Eye Joe&lt;br /&gt;
+I'd been married long time ago&lt;br /&gt;
+Where did you come from, where did you go?&lt;br /&gt;
+Where did you come from, Cotton-Eye Joe?&lt;br /&gt;
+If it hadn't been for Cotton-Eye Joe&lt;br /&gt;
+I'd been married long time ago&lt;br /&gt;
+Where did you come from, where did you go?&lt;br /&gt;
+Where did you come from, Cotton-Eye Joe?&lt;br /&gt;
+If it hadn't been for Cotton-Eye Joe&lt;br /&gt;
+I'd been married long time ago&lt;br /&gt;
+Where did you come from, where did you go?&lt;br /&gt;
+Where did you come from, Cotton-Eye Joe?
+&lt;/p&gt;</pre></code>
+</div>
+</div>
+<div class="child">
+<code><pre>
+&lt;b&gt;CSS Rules:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;
+CSS is used to style HTML. A .css file is also called a 'stylesheet'.
+&lt;/li&gt;&lt;li&gt;
+as with HTML, CSS is written in lowercase.
+&lt;/li&gt;&lt;li&gt;
+structure: CSS is made up of a &lt;font color="orange"&gt;selector&lt;/font&gt; and &lt;font color="violet"&gt;declarations&lt;/font&gt;. declarations are separated by a semicolon &lt;b&gt;;&lt;/b&gt; and are all contained within curly brackets &lt;b&gt;{ }&lt;/b&gt; :&lt;br&gt;
+&lt;code&gt;&lt;pre&gt;
+&lt;font color="orange"&gt;title&lt;/font&gt; {&lt;font color="violet"&gt;
+    font-size: 14px;
+    font-weight:bold;
+&lt;/font&gt;}
+&lt;/pre&gt;&lt;/code&gt;
+&lt;/li&gt;&lt;li&gt;
+within each &lt;font color="violet"&gt;declaration&lt;/font&gt; is a &lt;font color="red"&gt;property&lt;/font&gt; and &lt;font color="blue"&gt;value&lt;/font&gt;:&lt;br&gt;
+&lt;code&gt;&lt;pre&gt;
+title {
+    &lt;font color="red"&gt;font-size&lt;/font&gt;: &lt;font color="blue"&gt;14px&lt;/font&gt;;
+    &lt;font color="red"&gt;font-weight&lt;/font&gt;: &lt;font color="blue"&gt;bold&lt;/font&gt;;
+}
+&lt;/pre&gt;&lt;/code&gt;
+&lt;/li&gt;&lt;li&gt;
+there are different types of &lt;font color="orange"&gt;selector&lt;/font&gt;:
+&lt;ul&gt;&lt;li&gt;
+&lt;b&gt;elements:&lt;/b&gt; existing HTML elements, for example: &amp;lt;p&amp;gt;, &amp;lt;b&amp;gt;, &amp;lt;h1&amp;gt;...
+&lt;ul&gt;
+&lt;code&gt;&lt;pre&gt;
+h1 {
+    color: red;
+    font-size: 32px;
+    font-weight: bold;
+}
+&lt;/pre&gt;&lt;/code&gt;
+will cause all text in the &amp;lt;h1&amp;gt;hello!&amp;lt;/h1&amp;gt; element to show as &lt;h1&gt;hello!&lt;/h1&gt;
+&lt;/ul&gt;
+&lt;/li&gt;&lt;li&gt;
+&lt;b&gt;id:&lt;/b&gt; used for a user-defined element that is unique within a page.
+&lt;ul&gt;
+&lt;code&gt;&lt;pre&gt;
+#example2 {
+    color: green;
+    text-decoration:underline;
+}
+&lt;/pre&gt;&lt;/code&gt;
+will cause the &amp;lt;p id="example2"&amp;gt;hello!&amp;lt;/p&amp;gt; element to show as
+&lt;p id="example2"&gt;hello!&lt;/p&gt;
+&lt;/ul&gt;
+&lt;/li&gt;&lt;li&gt;
+&lt;b&gt;class:&lt;/b&gt; used for a user-defined element that may be used multiple times across a site or page.
+&lt;ul&gt;
+&lt;code&gt;&lt;pre&gt;
+.example3 {
+    color: magenta;
+    border-bottom: 3px solid orange;
+    width: 50%;
+}
+&lt;/pre&gt;&lt;/code&gt;
+will cause the &amp;lt;p class="example3"&amp;gt;hello!&amp;lt;/p&amp;gt; element to show as
+&lt;p class="example3"&gt;hello!&lt;/p&gt;
+&lt;/ul&gt;
+&lt;/li&gt;&lt;/ul&gt;
+&lt;/li&gt;&lt;li&gt;
+more information on CSS selectors can be found &lt;a href="https://www.w3schools.com/Css/css_selectors.asp"&gt;here&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;
+CSS can be added to HTML in three ways:
+&lt;ul&gt;&lt;li&gt;
+&lt;b&gt;internal:&lt;/b&gt; CSS is written directly in the HTML file using the &lt;code&gt;&amp;lt;style&amp;gt;&amp;lt;/style&amp;gt;&lt;/code&gt; element.&lt;br&gt;
+&lt;i&gt;for hub sites, this is the best practice, particularly if CSS is written into the HTML header; it keeps all of the CSS in one place for easy editing.&lt;/i&gt;
+&lt;/li&gt;&lt;li&gt;
+&lt;b&gt;external:&lt;/b&gt; a stylesheet is imported into the HTML using&lt;br&gt;
+&lt;code&gt;&amp;lt;link rel="stylesheet" href="mystyle.css"&amp;gt;&lt;/code&gt;&lt;br&gt;
+&lt;i&gt;for a self-hosted website, eg. GitHub Pages, this is best practice.&lt;/i&gt;
+&lt;/li&gt;&lt;li&gt;
+&lt;b&gt;inline:&lt;/b&gt; CSS is referenced inline using a style attribute:&lt;br&gt;
+&lt;code&gt;&amp;lt;div style="property:value;"&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;br&gt;
+&lt;i&gt;this should be used sparingly, as it can be difficult to come back to for later edits and updates.&lt;/i&gt;
+&lt;/li&gt;&lt;/ul&gt;
+&lt;/li&gt;&lt;/ul&gt;
+
+&lt;style&gt;
+* {
+    font-size: 32px;
+}
+
+header {
+    font-size: 34px;
+    font-weight:bold;
+    background-color: gold;
+}
+
+code {
+    background-color: #e3e3e3;
+    margin: 0px auto;
+}
+
+li {
+    padding-top:20px;
+}
+
+h1 {
+    color: red;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#example2 {
+    color: green;
+    text-decoration:underline;
+}
+
+.example3 {
+    color: magenta;
+    border-bottom: 3px solid orange;
+    width: 50%;
+}
+&lt;/style&gt;
+</pre></code></div>
