@@ -1,0 +1,136 @@
+<div class="container"><b>Building Blocks:</b>
+<ul>
+<li>
+there are a few HTML elements that are used specifically to apply CSS styling. the following css will be used to demonstrate:<br>
+<code><pre style="font-size:24px;">
+.example-class {
+    color: #ff0000;
+    font-weight:bold;
+    text-decoration:underline;
+    border: 1px solid orange;
+}</pre></code>
+<ul><li><b>span:</b> the span element is applied inline. it may be useful for things like creating tooltips or formatting important text. eg:<ul>
+this is outside of the span element and <span class="example-class">this is inside</span> and this is outside.<br>
+<code>this is outside of the span element and &lt;span class="example-class"&gt;this is inside&lt;/span&gt; and this is outside.</code>
+</ul></li>
+<li>
+<b>div:</b> the div (divider or section) element is applied as a block. it is useful for creating banners, headers, and cards. eg:<ul>
+this is outside of the div element and <div class="example-class">this is inside</div> and this is outside.<br>
+<code>this is outside of the div element and &lt;div class="example-class"&gt;this is inside&lt;/div&gt; and this is outside.</code>
+</ul>
+</li>
+<li><b>section:</b> the section element behaves the same as the <b>div</b> element. it is typically used where content is being meaningfully grouped based on a common theme; ie. <b>section</b> is used to indicate how content (text, images, apps) are organized, while <b>div</b> is more generic and geared toward the layout and styling of a website. 
+</ul>
+</li><li>
+divs are the building blocks of websites. they determine where content is positioned, how it is sized, borders, backgrounds, etc.
+</li><li>
+divs can be nested. the "outer" div acts as a <i><u>parent</u></i>, while "inner" divs are the <i><u>children</u></i>. children will inherit properties from the parent unless told otherwise. for example:<code><pre style="font-size:24px;">
+
+&lt;div class="parent"&gt;
+    &lt;div class="child1"&gt;text&lt;/div&gt;
+    &lt;div class="child2"&gt;text&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+.parent {
+    <span style="color:green;font-size:24px;">background: pink;</span>
+    <span style="color:#e00b41;font-size:24px;">font-family: verdana;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;</span>
+    display: flex;
+    align-items: stretch;
+    padding: 10px;
+    width: 50%;
+    height: content;
+    border: 3px solid black;
+    margin: 0px auto;
+}
+
+.child1 {
+    <span style="color:green;font-size:24px;">background: orange;</span>
+    <span style="color:#e00b41;font-size:24px;">font-size: 14px;</span>
+    flex-grow: 1;
+    padding: 10px;
+    overflow:hidden;
+}
+
+.child2 {
+    <span style="color:green;font-size:24px;">background: blue;</span>
+    <span style="color:#e00b41;font-size:24px;">font-size: 14px;
+    font-weight: bold;
+    text-align: justify;</span>
+    flex-grow: 1;
+    padding: 10px;
+    overflow:hidden;
+}
+&lt;/style&gt;</pre></code><br>
+<div class="parent">
+<div class="child1">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</div>
+<div class="child2">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</div>
+</div>
+</li></ul>
+</div>
+
+
+
+<style>
+* {
+	font-size: 32px;
+}
+
+.container {
+    width: 70%;
+    margin: 20px auto;
+}
+    
+code {
+	background-color: #e3e3e3;
+    margin: 0px auto;
+    font-size: 24px;
+}
+    
+li {
+	padding-top:20px;
+}
+
+.example-class {
+	color: #ff0000;
+    font-weight:bold;
+    text-decoration:underline;
+    border: 1px solid orange;
+}
+
+.parent {
+	display: flex;
+    align-items: stretch;
+    padding: 10px;
+    width: 50%;
+    height: content;
+    background: pink;
+    border: 3px solid black;
+    font-family: verdana;
+    font-size: 14px;
+    color: #fff;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.child1 {
+	flex-grow: 1;
+    padding: 10px;
+    background: orange;
+    font-size: 14px;
+    overflow:hidden;
+}
+
+.child2 {
+	flex-grow: 1;
+    padding: 10px;
+    background: blue;
+    font-size: 14px;
+    font-weight: bold;
+    overflow:hidden;
+    text-align: justify;
+}
+</style>
